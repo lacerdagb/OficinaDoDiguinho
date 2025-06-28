@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ /* INICIO HEADER */
+ .nav {
+    background-color: #FFF;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+ }
+ .nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 150px;
+ }
+ .nav-list a {
+    text-decoration: none;
+    color: #000;
+    padding: 13px;
+    background-color: #FFF;
+ }
+ .nav-list a:hover {
+    color: #FFF;
+    background-color: #595959;
+ }
+/* FIM HEADER */
+
+
+ /* INICIO MAIN */
+ .main {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-image: url(img/capa1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 7%;
+ }
+ .main h1 {
+    color: #FFF;
+    font-size: 64px;
+  font-family: "Raleway", sans-serif;
+
+ }
+ .main p {
+    color: #FFF;
+      font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 35px;
+ }
+ /* FIM MAIN */
+
+
+ /* INICIO SECTION1 */
+ .section1 {
+    background-color: #DDD;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;    
+    justify-content: center;
+    flex-direction: row;
+    align-items: stretch;
+}
+.section1 div {
+    background-color: #FFF;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section1 img {
+    max-width: 400px;
+    opacity:0.8;
+    margin-bottom: 10px;
+}
+.section1 img:hover {
+    opacity: 1;
+    transition: 0.9s;
+}
+.section1 h3 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.section1 p {
+    text-align: justify;
+
+}
+/* FINAL DA SECTION1 */
+
+
+/* INICIO SECTION2 */
+.section2 {
+    width: 100%;
+    text-align: start;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 25px;
+}
+.blocos-info {
+    /* background-color: blue; */
+    margin: 25px;
+    padding: 30px;
+    display: flex;
+    text-align: center;
+}
+.blocos-info div {
+    margin: 10px;
+    width: 100%;
+    background-color: #FFF;
+    flex-direction: column;
+    padding: 1%;
+}
+.section2 h3 {
+    font-size: 20px;
+    color: #646464;
+}
+
+.section2 h2 {
+    font-size: 50px;
+}
+/* FIM SECTION2 */
+
+
+/* INICIO SECTION3 */
+
+.mapa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+/* FIM SECTION3 */
+
+
+
+/* INICIO DO FOOTER */
+footer {
+    width: 100%;
+    background-color: #000;
+    padding: 20px 0;
+}
+footer h3 {
+    color: #DDD;
+    text-align: center;
+}
+footer p {
+    color: #DDD;
+    text-align: start;
+    ;
+}
+footer .subfooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start; /* Alinha o conteúdo de cada coluna no topo */
+    flex-wrap: wrap; /* Permite que as colunas quebrem para a próxima linha em telas menores */
+    max-width: 1200px; /* Limita a largura máxima do subfooter */
+    margin: 0 auto 30px auto;
+
+}
+footer .subfooter div {
+    flex: 1; /* Permite que cada coluna cresça e ocupe o espaço disponível */
+    min-width: 280px; /* Garante uma largura mínima para as colunas em telas menores */
+    margin: 15px; /* Adiciona margem entre as colunas */
+    display: flex; /* Mantém o display flex para a coluna */
+    flex-direction: column; /* Coloca h3 e p um abaixo do outro dentro de cada coluna */
+    align-items: center; /* Centraliza o conteúdo (h3 e p) dentro de cada coluna */
+    text-align: center;
+}
+footer p {
+    text-align: center;
+}
+footer h3 {
+    margin-bottom: 10px;
+}
+/* FIM DO FOOTER */
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 1050px) {
+    /* INICIO MAIN */
+    .nav-list {
+        margin-right: 50px;
+    }
+
+
+    /* SECTION1 */
+    .section1 {
+        flex-direction: column;
+    }
+    .section1 img {
+        width: 80%;
+        border-radius: 4px;
+        margin: 20px;
+    }
+    .section1 div h3{
+        width: 100%;
+        text-align: start;
+        margin-bottom: 15px;
+    }
+
+
+    /* SECTION2 */
+    .section2 {
+
+    }
+    .section2 div{
+        flex-direction: column;
+    }
+    .section2 .blocos-info > div{
+        border: solid 1px rgba(63, 63, 63, 0.501);
+        padding: 15px;
+    }
+    .section2 h2 {
+        text-align: center;
+    }
+
+}
